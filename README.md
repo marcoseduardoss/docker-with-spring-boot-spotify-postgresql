@@ -14,7 +14,7 @@ mvn clean package dockerfile:build
 ```
 
 ## Executando com Docker Compose 
-O Docker-compose executa o projeto, cria e sobe as instâncias a partir da imagem do Postgres e do Projeto Web (criado com o comando mvn). Não será necessário executar os Docker com o Comando RUN. 
+O Docker-compose executa o projeto, cria e sobe as instâncias a partir da imagem do Postgres e do Projeto Web (criado com o comando mvn). Caso queira, você poderá subir as imagens executando o Comando RUN, mas considero mais prático o uso do Docker-compose.
 ```
 docker-compose up
 ```
