@@ -1,11 +1,10 @@
 # docker-with-spring-boot-postgresql
 
-[Executando aplicações Spring Boot no Docker](https://wp.me/p5RSbg-fO)
-
 ## Pré requisito
 - Maven 3
 - Java 8
 - Docker 1.13.0+
+- Spotify
 
 # Preparando ambiente
 
@@ -42,3 +41,6 @@ docker-compose up
 
 - http://localhost:8080/db/pool/name
 - http://localhost:8080/db/pool/size
+
+## Fonte: 
+[Executando aplicações Spring Boot no Docker](https://wp.me/p5RSbg-fO)
