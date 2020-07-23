@@ -18,20 +18,12 @@ mvn clean package dockerfile:build
 
 Executando container do Postgres (Opcional. Execute caso nao queira usar o mvn)
 ```
-docker run -it \    
-    --name docker-postgres \    
-    -e POSTGRES_DB=db \   
-    -e POSTGRES_USER=postgres \   
-    -e POSTGRES_PASSWORD=postgres  
-    postgres:10.4
+docker run -it  --name docker-postgres  -e POSTGRES_DB=db  -e POSTGRES_USER=postgres  -e POSTGRES_PASSWORD=postgres postgres:10.4
 ```
 
 Executando container da aplicação (Opcional. Execute caso nao queira usar o mvn)
 ```
-docker run -it     
-   --link docker-postgres     
-   -p 8080:8080    
-   emmanuelneri/spring-boot-docker-app
+docker run -it --link docker-postgres -p 8080:8080 marcoseduardoss/spring-boot-docker-app
 ```
 
 ```
