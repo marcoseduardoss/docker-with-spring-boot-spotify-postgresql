@@ -31,7 +31,7 @@ CONTAINER ID        IMAGE                                 COMMAND               
 7f01ce21cb11        postgres:10.4                         "docker-entrypoint.s…"   8 minutes ago       Up 7 seconds        5432/tcp                 springbootdocker_docker-postgres_1
 ```
 
-## Executando com Docker Compose (Opção 2 para execução do projeto: preferíveo, mais simples)
+## Executando com Docker Compose (Opção 2 para execução do projeto: preferível, mais simples)
 
 ```
 docker-compose up
