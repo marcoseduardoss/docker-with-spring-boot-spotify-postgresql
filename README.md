@@ -13,7 +13,7 @@
 mvn clean package dockerfile:build 
 ```
 
-## Executando somente com docker
+## Executando somente com docker (Opção 1 para execução do projeto)
 
 Executando container do Postgres (Opcional. Execute caso nao queira usar o mvn)
 ```
@@ -31,7 +31,7 @@ CONTAINER ID        IMAGE                                 COMMAND               
 7f01ce21cb11        postgres:10.4                         "docker-entrypoint.s…"   8 minutes ago       Up 7 seconds        5432/tcp                 springbootdocker_docker-postgres_1
 ```
 
-## Executando com Docker Compose
+## Executando com Docker Compose (Opção 2 para execução do projeto: preferíveo, mais simples)
 
 ```
 docker-compose up
