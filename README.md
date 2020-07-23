@@ -1,4 +1,4 @@
-# spring-boot-docker
+# docker-eith-spring-boot-postgresql
 
 [Executando aplicações Spring Boot no Docker](https://wp.me/p5RSbg-fO)
 
