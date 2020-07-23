@@ -6,7 +6,7 @@
 - Docker 1.13.0+
 - Spotify
 
-# Preparando ambiente
+# Build do projeto e criação de sua imagem Docker com Spotify   
 
 
 ```
