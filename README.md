@@ -13,28 +13,18 @@
 mvn clean package dockerfile:build 
 ```
 
-## Executando somente com docker (Opção 1 para execução do projeto)
-
-Executando container do Postgres (Opcional. Execute caso nao queira usar o mvn)
+## Executando com Docker Compose 
+Recomendo esta opção. O Docker-compose executa o projeto, crian as instâncias a partir da imagem do Postgres, bem como da imagem do Projeto Web criado com o comando mvn. Não será ncessário executar os Docker com o COmando RUN.
 ```
-docker run -it  --name docker-postgres  -e POSTGRES_DB=db  -e POSTGRES_USER=postgres  -e POSTGRES_PASSWORD=postgres postgres:10.4
-```
-
-Executando container da aplicação (Opcional. Execute caso nao queira usar o mvn)
-```
-docker run -it --link docker-postgres -p 8080:8080 marcoseduardoss/spring-boot-docker-app
+docker-compose up
 ```
 
+## Exibindo insâncias em execução
+Para ver o status das instâncias, execute o comando: Docker ps -a
 ```
 CONTAINER ID        IMAGE                                 COMMAND                  CREATED             STATUS              PORTS                    NAMES
 3b7f0cfeceaf        emmanuelneri/spring-boot-docker-app   "java -Djava.securit…"   8 minutes ago       Up 7 seconds        0.0.0.0:8080->8080/tcp   springbootdocker_docker-app_1
 7f01ce21cb11        postgres:10.4                         "docker-entrypoint.s…"   8 minutes ago       Up 7 seconds        5432/tcp                 springbootdocker_docker-postgres_1
-```
-
-## Executando com Docker Compose (Opção 2 para execução do projeto: preferível, mais simples)
-
-```
-docker-compose up
 ```
 
 ## Acessando 
