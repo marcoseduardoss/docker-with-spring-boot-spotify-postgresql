@@ -18,6 +18,11 @@ public class DbController {
     @Autowired
     private HikariDataSource dataSource;
 
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }    
+    
     @GetMapping("/pool/name")
     public String getPoolName() {
         return dataSource.getHikariConfigMXBean().getPoolName();
